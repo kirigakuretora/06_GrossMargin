@@ -1,6 +1,0 @@
-F:\Document\Home\01_Lab\117_WPF.GM2\WpfApp.Library\bin\Debug\WpfApp.Library.xml
-F:\Document\Home\01_Lab\117_WPF.GM2\WpfApp.Library\bin\Debug\WpfApp.Library.dll
-F:\Document\Home\01_Lab\117_WPF.GM2\WpfApp.Library\bin\Debug\WpfApp.Library.pdb
-F:\Document\Home\01_Lab\117_WPF.GM2\WpfApp.Library\obj\Debug\WpfApp.Library.dll
-F:\Document\Home\01_Lab\117_WPF.GM2\WpfApp.Library\obj\Debug\WpfApp.Library.pdb
-F:\Document\Home\01_Lab\117_WPF.GM2\WpfApp.Library\obj\Debug\WpfApp.Library.csprojResolveAssemblyReference.cache
