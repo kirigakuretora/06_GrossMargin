@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Windows;
 
+using WpfApp.Properties;
+
 namespace WpfApp.View
 {
+    using System.Windows.Input;
     public partial class DetailsDialog : Window
     {
         #region 0.Global Variable
@@ -26,11 +29,17 @@ namespace WpfApp.View
             Close();
         }
 
-        private void Close_Click(Object sender, RoutedEventArgs e)
+        private void CommandBinding_CanExecute(Object Sender, CanExecuteRoutedEventArgs E)
+        {
+            E.CanExecute = true;
+        }
+
+        private void CommandBinding_Executed(Object Sender, ExecutedRoutedEventArgs E)
         {
             DialogResult = false;
             Close();
         }
         #endregion
+
     }
 }

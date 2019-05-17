@@ -5,6 +5,7 @@ using WpfApp.Library.Models;
 
 namespace WpfApp
 {
+    using System.Windows.Input;
 
     public partial class MainWindow : Window
     {
@@ -26,14 +27,21 @@ namespace WpfApp
                 Revenue.Text = String.Format("{0}", Details.Revenue);
                 CGOS.Text = String.Format("{0}", Details.CGOS);
                 Percent.Text =String.Format("{0}",Details.Percent);
-                Result.Text= String.Format("{0}", AC.GrossMargin(Details.Revenue, Details.CGOS, Details.Percent));
+                Result.Text= String.Format("{0}", AC.GrossMargin(Convert.ToDecimal(Details.Revenue), Convert.ToDecimal(Details.CGOS), Convert.ToDecimal(Details.Percent)));
             }
         }
 
-        private void Exit_Click(Object sender, RoutedEventArgs e)
+        private void CommandBinding_CanExecute(Object Sender, CanExecuteRoutedEventArgs E)
+        {
+            E.CanExecute = true;
+        }
+
+        private void CommandBinding_Executed(Object Sender, ExecutedRoutedEventArgs E)
         {
             Close();
         }
+
         #endregion
+
     }
 }

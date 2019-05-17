@@ -6,6 +6,11 @@
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Close" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"></CommandBinding>
+    </Window.CommandBindings>
+    
     <Grid>
         <Grid>
             <Label Content="收入淨額:"  Grid.Row="4"  FontSize="20" Margin="40,0"/>
@@ -47,7 +52,7 @@
 
         <Grid>
             <Button Content="Enter Data" FontSize="14" Grid.Row="12" Margin="100,145,300,145" Click="NewDetailsDialog_Click"/>
-            <Button Content="Exit" FontSize="14" Grid.Row="16" Margin="300,145,100,145"  Click="Exit_Click"/>
+            <Button Content="Exit" FontSize="14" Grid.Row="16" Margin="300,145,100,145"  Command="ApplicationCommands.Close"/>
         </Grid>
     </Grid>
 </Window>
