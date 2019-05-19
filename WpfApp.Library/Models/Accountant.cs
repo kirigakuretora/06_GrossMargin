@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace WpfApp.Library.Models
 {
@@ -7,6 +8,6 @@ namespace WpfApp.Library.Models
         public Decimal GrossMargin(Decimal Revenue, Decimal CGOS, Decimal Percent)
         {
             return Math.Round(Revenue / (Percent - CGOS / 100),MidpointRounding.AwayFromZero) ;
-        }
+        }    
     }
 }

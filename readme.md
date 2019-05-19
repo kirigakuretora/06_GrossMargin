@@ -3,7 +3,7 @@
 ***
 ##  Features【功能】
 * WpfApp : 主程式。
-* WpfApp.Library : 財務會計（Financial Accounting）模組。 
+* WpfApp.Library : 公式計算邏輯。 
 
 ## Platforms【程式平台】
 * C#
